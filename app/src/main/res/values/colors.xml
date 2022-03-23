@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+<!--    <color name="label_border_color">#8c7272</color>-->
+<!--    <color name="cell_black_color">#656464</color>-->
+<!--    <color name="cell_white_color">#efefefef</color>-->
+<!--    <color name="cell_destination_color_white">#e8d89b</color>-->
+<!--    <color name="cell_kill_destination_color_white">#e8a19b</color>-->
+<!--    <color name="cell_destination_color_black">#8f866f</color>-->
+<!--    <color name="cell_kill_destination_color_black">#8f6360</color>-->
+<!--    BLACK(Attribute.BACK_COLOR(116, 65, 140)),-->
+<!--    WHITE(Attribute.BACK_COLOR(171, 129, 219)),-->
+<!--    HIGHLIGHT_BLACK_KILLING(Attribute.BACK_COLOR(140, 65, 65)),-->
+<!--    HIGHLIGHT_WHITE_KILLING(Attribute.BACK_COLOR(219, 129, 129)),-->
+<!--    HIGHLIGHT_WHITE(Attribute.BACK_COLOR(129, 194, 219)),-->
+<!--    HIGHLIGHT_BLACK(Attribute.BACK_COLOR(65, 111, 140));-->
+
+    <color name="label_border_color">#1E1E1E</color>
+    <color name="cell_black_color">#74418C</color>
+    <color name="cell_white_color">#F0AB81DB</color>
+    <color name="cell_destination_color_white">#81C2DB</color>
+    <color name="cell_kill_destination_color_white">#DB8181</color>
+    <color name="cell_destination_color_black">#416F8C</color>
+    <color name="cell_kill_destination_color_black">#8C4141</color>
+</resources>
