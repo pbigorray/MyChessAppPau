@@ -17,7 +17,7 @@ import androidx.annotation.Nullable;
 
 import com.example.miajedrez.R;
 import com.example.miajedrez.model.Coordinate;
-import com.example.miajedrez.model.Piece;
+import com.example.miajedrez.model.Pieces.Piece;
 
 /**
  * Clase Cell encargada de la creacion, utilizacion y representacion de cada celda
@@ -34,9 +34,6 @@ public class Cell extends androidx.appcompat.widget.AppCompatImageButton impleme
 
     /**
      * Metodo constructor de las celdas
-     *
-     * @param board      Tablero el que pertenece
-     * @param Coordinate Cordenada a la que corresponde
      */
     public Cell(@NonNull Context context) {
         super(context);
@@ -88,6 +85,8 @@ public class Cell extends androidx.appcompat.widget.AppCompatImageButton impleme
 
         setMinimumWidth(size);
         setMinimumHeight(size);
+        setMaxWidth(size);
+        setMaxHeight(size);
 
         setBackgroundColor(getResources().getColor(color.getAttribute(),getContext().getTheme()));
     }
@@ -148,6 +147,17 @@ public class Cell extends androidx.appcompat.widget.AppCompatImageButton impleme
      */
     public void setPiece(Piece piece) {
         this.piece = piece;
+        //establecer imagen
+        if(piece!=null){
+            setImageResource(piece.getChessType().getShape());
+            int pading =(int)(getResources().getDimension(R.dimen.piece_padding));
+            setPadding(pading,pading,pading,pading);
+            setScaleType(ScaleType.FIT_CENTER);
+            setAdjustViewBounds(true);
+        }else {
+            setImageResource(0);
+        }
+
     }
 
     /**

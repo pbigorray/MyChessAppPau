@@ -1,7 +1,9 @@
-package com.example.miajedrez.model;
+package com.example.miajedrez.model.Pieces;
 
 
 
+import com.example.miajedrez.model.ChessType;
+import com.example.miajedrez.model.Coordinate;
 import com.example.miajedrez.view.Board;
 import com.example.miajedrez.view.Cell;
 

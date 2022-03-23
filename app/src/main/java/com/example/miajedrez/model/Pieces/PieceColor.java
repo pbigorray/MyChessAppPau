@@ -1,4 +1,4 @@
-package com.example.miajedrez.model;
+package com.example.miajedrez.model.Pieces;
 
 
 import java.io.Serializable;

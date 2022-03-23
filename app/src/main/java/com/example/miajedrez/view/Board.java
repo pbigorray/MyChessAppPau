@@ -15,8 +15,7 @@ import com.example.miajedrez.R;
 import com.example.miajedrez.model.ChessType;
 import com.example.miajedrez.model.Coordinate;
 import com.example.miajedrez.model.IDeletePieceManager;
-import com.example.miajedrez.model.Piece;
-import com.example.miajedrez.model.PieceColor;
+import com.example.miajedrez.model.Pieces.*;
 
 import java.io.Serializable;
 import java.util.*;
@@ -45,6 +44,7 @@ public class Board extends TableLayout implements Serializable {
 
         initializeCells();
         LOGGER.finest("Board created.");
+        placePieces();
     }
     /**
      * Metodo constructor del tablero
@@ -130,34 +130,53 @@ public class Board extends TableLayout implements Serializable {
      */
     private void placePieces() {
         //cambiar a coordinates
-//        for (int i = 0; i < 8; i++) {
+        for (int i = 0; i < 8; i++) {
+            new BlackPawn(getCellAt(new Coordinate((char) ('A' + i), 2)));
+            new WhitePawn(getCellAt(new Coordinate((char) ('A' + i), 7)));
+
 //            blackPiece.add(new BlackPawn(getCellAt(new Coordinate((char) ('A' + i), 2))));
 //            whitePiece.add(new WhitePawn(getCellAt(new Coordinate((char) ('A' + i), 7))));
-//
-//        }
+
+        }
 //        //White
+        new WhiteRook(getCellAt(new Coordinate('H', 8)));
+        new WhiteRook(getCellAt(new Coordinate('A', 8)));
 //        whitePiece.add(new WhiteRook(getCellAt(new Coordinate('H', 8))));
 //        whitePiece.add(new WhiteRook(getCellAt(new Coordinate('A', 8))));
-//
+
+        new WhiteKnight(getCellAt(new Coordinate('G', 8)));
+        new WhiteKnight(getCellAt(new Coordinate('B', 8)));
 //        whitePiece.add(new WhiteKnight(getCellAt(new Coordinate('G', 8))));
 //        whitePiece.add(new WhiteKnight(getCellAt(new Coordinate('B', 8))));
 //
+        new WhiteBishop(getCellAt(new Coordinate('F', 8)));
+       new WhiteBishop(getCellAt(new Coordinate('C', 8)));
 //        whitePiece.add(new WhiteBishop(getCellAt(new Coordinate('F', 8))));
 //        whitePiece.add(new WhiteBishop(getCellAt(new Coordinate('C', 8))));
 //
+        new WhiteKing(getCellAt(new Coordinate('E', 8)));
+        new WhiteQueen(getCellAt(new Coordinate('D', 8)));
 //        whitePiece.add(new WhiteKing(getCellAt(new Coordinate('E', 8))));
 //        whitePiece.add(new WhiteQueen(getCellAt(new Coordinate('D', 8))));
 //
 //        //Black
+        new BlackRook(getCellAt(new Coordinate('H', 1)));
+        new BlackRook(getCellAt(new Coordinate('A', 1)));
 //        blackPiece.add(new BlackRook(getCellAt(new Coordinate('H', 1))));
 //        blackPiece.add(new BlackRook(getCellAt(new Coordinate('A', 1))));
 //
+        new BlackKnight(getCellAt(new Coordinate('G', 1)));
+        new BlackKnight(getCellAt(new Coordinate('B', 1)));
 //        blackPiece.add(new BlackKnight(getCellAt(new Coordinate('G', 1))));
 //        blackPiece.add(new BlackKnight(getCellAt(new Coordinate('B', 1))));
 //
+        new BlackBishop(getCellAt(new Coordinate('F', 1)));
+        new BlackBishop(getCellAt(new Coordinate('C', 1)));
 //        blackPiece.add(new BlackBishop(getCellAt(new Coordinate('F', 1))));
 //        blackPiece.add(new BlackBishop(getCellAt(new Coordinate('C', 1))));
 //
+        new BlackKing(getCellAt(new Coordinate('D', 1)));
+        new BlackQueen(getCellAt(new Coordinate('E', 1)));
 //        blackPiece.add(new BlackKing(getCellAt(new Coordinate('D', 1))));
 //        blackPiece.add(new BlackQueen(getCellAt(new Coordinate('E', 1))));
 

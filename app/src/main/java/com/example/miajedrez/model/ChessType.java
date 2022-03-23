@@ -1,6 +1,7 @@
 package com.example.miajedrez.model;
 
 import com.example.miajedrez.R;
+import com.example.miajedrez.model.Pieces.PieceColor;
 
 /**
  * Enumerador encargado de poner el icono correcto al tipo de pieza correspondiente
